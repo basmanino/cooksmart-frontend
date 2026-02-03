@@ -1,4 +1,4 @@
-const API_URL = 'https://web-production-732b.up.railway.app';
+const API_URL = import.meta.env.VITE_API_URL || 'https://smartcook-bac-production.up.railway.app';
 
 document.addEventListener('DOMContentLoaded', () => {
     initTheme();
@@ -200,3 +200,4 @@ async function saveAIRecipe(text) {
         alert('Failed to save recipe.');
     }
 }
+
